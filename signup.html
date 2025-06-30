@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html >
+	<head>
+        <title>HarmonyHigh Music Awards</title>
+        <link rel="stylesheet" href="main.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     </head>
+
+     <body>
+     <section id="banner">
+         <img src="img/logo.png" class="logo">
+         <div class="banner-text">
+             <h1>Sponsor Sign up</h1>
+         </div>
+     </section>
+     
+     <div id="sideNav">
+         <nav>
+         <ul>
+             <li><a href="home.html">HOME</a></li>
+             <li><a href="winners.html">WINNERS</a></li>
+             <li><a href="#">SINGERS</a></li>
+             <li><a href="#">PRODUCERS</a></li>
+             <li><a href="#">SPONSERS</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+         </ul>
+         </nav>
+     </div>
+     <div id="menuBtn">
+         <img src="img/menu.png" id="menu">
+     </div>
+     </head>
+    <br>
+    <br>
+          <div class="main">
+            <h1>HarmonyHigh Music Awards</h1>
+            <br>
+			<h2>Sponsor Sign up</h2>
+			<form action="" onsubmit="redirectToPackages(event)">
+				<label for="first"
+					>First Name:</label
+				>
+				<input
+					type="text"
+					id="first"
+					name="first"
+					placeholder="Enter your first Name" required>
+
+
+				<label for="last"
+					>Last Name:</label
+				>
+				<input
+					type="text"
+					id="last"
+					name="last"
+                    placeholder="Enter your last Name" required>
+                    
+				
+                <label for="company">Company Name:</label>
+				<input
+					type="text"
+					id="company"
+					name="company"
+					placeholder="Enter your Company Name " required>
+
+                <label for="Address">Address:</label>
+				<input
+					type="text"
+					id="Address"
+					name="Address"
+					placeholder="Enter your address" required>
+
+                <label for="email">Email:</label>
+				<input
+					type="email"
+					id="email"
+					name="email"
+                    placeholder="Enter your email" required>
+
+
+				<label for="password"
+					>Password:</label
+				>
+				<input
+					type="password"
+					id="password"
+					name="password"
+					pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$"
+					title="Password must contain at least one number, 
+						one alphabet, one symbol, and be at 
+						least 8 characters long"
+                        placeholder="Enter your password" required>
+
+
+				<label for="repassword"
+					>Re-type Password:</label
+				>
+				<input
+					type="password"
+					id="repassword"
+					name="repassword"
+					placeholder="Enter your re-password" required>
+
+
+				<label for="mobile"
+					>Contact:</label
+				>
+				<input
+					type="text"
+					id="mobile"
+					name="mobile"
+					maxlength="10"
+					placeholder="Enter your contact number" required>
+
+				
+               <p >Agreement to terms & condition</p>
+               <input 
+                  type="checkbox"
+                  />
+
+				<button type="submit">
+					Sign up
+				</button>
+			</form>
+		</div>
+        <br>
+	<br>
+
+
+	<script>
+		var menuBtn = document.getElementById("menuBtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+		
+		sideNav.style.right = "-250px";
+		
+		menuBtn.onclick = function(){
+			if(sideNav.style.right == "-250px"){
+				sideNav.style.right = "0";
+				menu.src = "img/close.png";
+			}
+			else{
+				sideNav.style.right = "-250px";
+				menu.src = "img/menu.png";
+			}   
+		}
+		function redirectToPackages(event) {
+			event.preventDefault();
+			// Simulate successful sign up
+			window.location.href = 'package.html';
+		}
+		</script>
+		<script src="http://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<h3>Contact us</h3>
+					<p>Email:<br>Harmonyhigh@award.com</p>
+					<p>Phone:<br>+94 11 545 8941</p>
+					<p>Address:<br>SLIIT Malabe Campus, New Kandy road, Malabe</p>
+				</div>
+				<div class="footer-content">
+					<h3>Quick Link</h3>
+					<ul class="list">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="winners.html">WINNERS</a></li>
+						<li><a href="">SINGERS</a></li>
+						<li><a href="">PRODUCERS</a></li>
+						<li><a href="sponsor.html">SPONSERS</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="footer-content">
+					<h3>Follow us</h3>
+					<ul class="social-icons">
+					<li><a href=""><i class="fab fa-facebook"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-bar">
+				<a href="contact.html">Contact us</a>
+				<a href="pri.html"> || privacy policy</a>
+				<p>&copy; 2024 HarmonyHigh Company All right reserved.</p>
+			</div>
+		</footer>
+
+
+
+	</body>
+</html>

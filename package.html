@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HarmonyHigh Music Awards</title>
+    <link rel="stylesheet" href="package.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+ </head>
+ <body>
+ <section id="banner">
+     <img src="img/logo.png" class="logo">
+     <div class="banner-text">
+         <h1>About</h1>
+     </div>
+ </section>
+ 
+ <div id="sideNav">
+     <nav>
+     <ul>
+         <li><a href="home.html">HOME</a></li>
+         <li><a href="winners.html">WINNERS</a></li>
+         <li><a href="#">SINGERS</a></li>
+         <li><a href="#">PRODUCERS</a></li>
+         <li><a href="#">SPONSERS</a></li>
+         <li><a href="about.html">ABOUT</a></li>
+     </ul>
+     </nav>
+ </div>
+ <div id="menuBtn">
+     <img src="img/menu.png" id="menu">
+ </div>
+ <br>
+ <br>
+ 
+
+<body>
+    
+    <div class="container mt-3">
+        <div class="package">
+            <div class="package__item">
+                <div class="package__header">
+                    <div class="package__name">SILVER</div>
+                    <img src="img/s1.png" width="200px": height="200px">
+                </div>
+                <div class="package__body">
+                    <div class="package__price-container">
+                        <div class="package__price">HK$ 0.00</div>
+                    </div>
+                    <ul>
+                        <li>User Account (1)</li>
+                        <li>Startup filter and list view</li>
+                        <li>Investor filter and list view</li>
+                    </ul>
+                </div>
+                <div class="package__footer">
+                    <button>Get Started</button>
+                </div>
+            </div>
+            <div class="package__item">
+                <div class="package__header">
+                    <div class="package__name">PLATTINUM</div>
+                    <img src="img/p1.png" width="200px": height="200px">
+                </div>
+                <div class="package__body">
+                    <div class="package__price-container">
+                        <div class="package__price package__price--sm package__price--monthly">HK$ 1,000.00</div>
+                        <div class="package__price package__price--sm package__price--yearly">HK$ 12,000.00</div>
+                    </div>
+                    <ul>
+                        <li>Premium User Account Dashboard</li>
+                        <li>Individual Startup profile page</li>
+                        <li>Startup filter and list view</li>
+                        <li>Investor filter and list view</li>
+                        <li>Video Shooting Promotion</li>
+                        <li>Chatroom</li>
+                        <li>View Individual profile pages</li>
+                        <li>Personalize newsletter recommendation</li>
+                    </ul>
+                </div>
+                <div class="package__footer">
+                    <button>Get Started</button>
+                </div>
+            </div>
+            <div class="package__item">
+                <div class="package__header">
+                    <div class="package__name">GOLD</div>
+                    <img src="img/g1.png" width="200px": height="200px">
+                </div>
+
+                <div class="package__body">
+                    <div class="package__price-container package__price-container--column">
+                        <div class="package__column">
+                            <div class="package__column-title">Individual</div>
+                            <div class="package__column-content">Quarterly</div>
+                            <div class="package__column-price package__column-price--bb">HK$ 300.00</div>
+                            <div class="package__column-content">Yearly</div>
+                            <div class="package__column-price">HK$ 1,000.00</div>
+                        </div>
+                        <div class="package__column package__column--2">
+                            <div class="package__column-title">Institutional</div>
+                            <div class="package__column-content">Quarterly</div>
+                            <div class="package__column-price package__column-price--bb">HK$ 1,200.00</div>
+                            <div class="package__column-content">Yearly</div>
+                            <div class="package__column-price">HK$ 3,000.00</div>
+                        </div>
+                    </div>
+                    
+                    <ul>
+                        <li>Premium User Account Dashboard</li>
+                        <li class="package__price--ins-yearly">3 Premium User Account<br>Dashboard</li>
+                        <li>Individual Investor profile page</li>
+                        <li>Startup filter and list view</li>
+                        <li>Investor filter and list view</li>
+                        <li>Chatroom</li>
+                        <li>View Individual profile pages</li>
+                        <li>Personalize newsletter recommendation</li>
+                    </ul>
+                </div>
+                <div class="package__footer">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <script>
+		var menuBtn = document.getElementById("menuBtn")
+		var sideNav = document.getElementById("sideNav")
+		var menu = document.getElementById("menu")
+		
+		sideNav.style.right = "-250px";
+		
+		menuBtn.onclick = function(){
+			if(sideNav.style.right == "-250px"){
+				sideNav.style.right = "0";
+				menu.src = "img/close.png";
+			}
+			else{
+				sideNav.style.right = "-250px";
+				menu.src = "img/menu.png";
+			}   
+		}
+		</script>
+		<script src="http://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<h3>Contact us</h3>
+					<p>Email:<br>Harmonyhigh@award.com</p>
+					<p>Phone:<br>+94 11 545 8941</p>
+					<p>Address:<br>SLIIT Malabe Campus, New Kandy road, Malabe</p>
+				</div>
+				<div class="footer-content">
+					<h3>Quick Link</h3>
+					<ul class="list">
+						<li><a href="home.html">Home</a></li>
+						<li><a href="winners.html">WINNERS</a></li>
+						<li><a href="">SINGERS</a></li>
+						<li><a href="">PRODUCERS</a></li>
+						<li><a href="sponsor.html">SPONSERS</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="footer-content">
+					<h3>Follow us</h3>
+					<ul class="social-icons">
+					<li><a href=""><i class="fab fa-facebook"></i></a></li>
+					<li><a href=""><i class="fab fa-twitter"></i></a></li>
+					<li><a href=""><i class="fab fa-instagram"></i></a></li>
+					<li><a href=""><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="button-bar">
+				<a href="contact.html">Contact us</a>
+				<a href="pri.html"> || privacy policy</a>
+				<p>&copy; 2024 HarmonyHigh Company All right reserved.</p>
+			</div>
+		</footer>
+</body>
+</html>
